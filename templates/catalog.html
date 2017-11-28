@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+<h1>Categories</h1>
+
+{% for c in categories %}
+
+<div>
+    <p>{{c.name}}</p>
+</div>
+
+{% endfor %}
+
+<h1>Recipes</h1>
+
+{% for r in recipes %}
+
+<div>
+    <p>{{r.name}}</p>
+    <p>{{r.description}}</p>
+    <p>{{r.link}}</p>
+</div>
+
+{% endfor %}
+
+</body>
+
+</html>
